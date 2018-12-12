@@ -147,11 +147,11 @@ void loop() {
   lsm.getEvent(&a, &m, &g, &temp); 
   
       outPut += "{\"X\":";
-      outPut += a.acceleration.x;
+      outPut += a.acceleration.x*5;
       outPut += ",\"Y\":";
-      outPut += a.acceleration.y;
+      outPut += a.acceleration.y*5;
       outPut += ",\"Z\":";
-      outPut += a.acceleration.z;
+      outPut += a.acceleration.z*5;
       outPut += ",\"GyroX\":";
       outPut += g.gyro.x;
       outPut += ",\"GyroY\":";
